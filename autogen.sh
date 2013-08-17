@@ -1,5 +1,5 @@
 #!/bin/sh
-libtoolize
+command -v glibtoolize >/dev/null 2>&1 && glibtoolize || libtoolize
 aclocal
 autoconf
 autoheader
